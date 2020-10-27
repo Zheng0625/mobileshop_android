@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--设置无标题-->
+        <item name="windowNoTitle">true</item>
+        <!--设置窗口为透明色，Android8.0以下无问题-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--Android 8.0以上的设置，兼容8.0以下版本，修改优化闪屏出现白屏的问题-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="tab_item_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tab_item_image_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#0000</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="comm_layout_title">
+      <item name="android:textSize">17.0sp</item>
+      <item name="android:textColor">@color/common_title_text_color</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+     </style>
+    <style name="line2">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="my_parsonal_list_height">
+        <item name="android:layout_height">49.0dip</item>
+    </style>
+    <style name="title_right_button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/plug_center_promotion_right_button_background_selector</item>
+        <item name="android:width">80.0dip</item>
+    </style>
+    <style name="line3">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/login_divider_line_margin_left</item>
+        <item name="android:background">@color/login_devider_bg</item>
+    </style>
+</resources>
